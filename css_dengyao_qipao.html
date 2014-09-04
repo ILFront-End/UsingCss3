@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.org_box{
+		    height:80px;
+		    line-height:80px; 
+		    margin-bottom:30px; 
+		    padding-left:2em;
+		    background:#F3961C; 
+		    position:relative; 
+		} 
+		.org_bot_cor{
+		    border:solid 15px #f3961c;
+		    border-color:#f3961c transparent transparent; 
+		    position:absolute; 
+		    left:60px; 
+		    bottom:-30px;
+		}
+		.org_bot_cor_2{
+		    height:30px;
+		    line-height:0; 
+		    font-size:60px; 
+		    color:#f3961c; 
+		    position:absolute; 
+		    left:60px; 
+		    bottom:-25px;
+		}
+
+		.ownwrite_cor_2{
+			line-height:0;
+			font-size: 40px;
+			bottom: -1px;
+			position: absolute;
+			color: #f3961c;
+			left: 55px;
+		
+		/* 这样写是有缺陷的， 因为文本元素存在行高，所以他占用的空间大。
+			一般边框法：设置高和宽为0，只用边框来制作等腰三角形
+			一般字符法：设置行高为0，设置字体大小，让字符变大。
+			
+		*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="org_box">
+		<span class="org_bot_cor"></span>
+		边框法实现底部90度尖角对话框
+	</div>
+
+	<div class="org_box">
+		<span class="ownwrite_cor_2">◆◇</span>
+		字符法实现底部90度尖角对话框
+	</div>
+</body>
+</html>

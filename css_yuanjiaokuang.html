@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type='text/css'>
+		.test{
+			height:300px;
+			width:300px;
+			background: yellow;
+			border-radius: 150px;
+			-webkit-border-radius:150px;
+			-moz-border-radius:150px;
+			margin:100px auto;
+			line-height: 300px;
+			position: relative;
+		}
+
+		.test span{
+			position:absolute;
+		}
+
+		span.bot{
+			height: 200px;
+			width: 200px;
+			background: white;
+			bottom: -30px;
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 50px;
+			z-index: -1;
+		}
+
+		span.top{
+			height: 250px;
+			width: 250px;
+			background: yellow;
+			border-radius: 130px;
+			bottom: -20px;
+			left: 15px;
+			z-index: -2;
+		}
+		/* 想要做出好看的气泡，定位是非常重要的，多学习人家是怎么定位的 ,定位实在太重要，好的定位该怎么学习呢？*/
+		
+	</style>
+</head>
+<body>
+	<div class="test">
+		<span class="bot"></span>
+		<span class="top"></span>
+		CSS3 border-radius实现气泡对话框效果
+	</div>
+</body>
+</html>

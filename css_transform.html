@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			height:100px;
+			width:100px;
+			background: red;
+			margin:100px auto;
+		}
+
+
+		/* 旋转 */
+		.ratete{
+			-webkit-transform: rotate(-45deg); 
+			-moz-transform: rotate(-45deg); 
+			filter: progidXImageTransform.Microsoft.BasicImage(rotation=3);
+		}
+
+		/* div元素的宽和高都会被放大双倍 */ 
+		.scale1{
+			-webkit-transform: scale(2); 
+			-moz-transform: scale(2);
+		}
+
+		/* div元素的宽会是双倍，而高度保持不变 */
+		.scale2{
+			-webkit-transform: scale(2, 1);  
+			-moz-transform: scale(2, 1); 
+		}
+
+		/* div的宽度将是双倍，并且水平翻转(水平折叠)，但是高度保持不变 */  
+		.scale3{
+			-webkit-transform: scale(-2, -1);  
+			-moz-transform: scale(-2, -1);  
+		}
+
+		.scale4:hover{
+			-webkit-transform: scale(1.01); /*小数可以是一位，也可以是两位 */
+			-moz-transform: scale(1.01);  
+		}
+
+		/* 这会将div元素向左移动10像素并向下移动20像素 */ 
+		.translate:hover{ 
+			-moz-transform: translate(10px, 20px); 
+			-webkit-transform: translate(10px, 20px);  			
+		}
+
+		/* 这会将div元素向左移动10像素并向下移动20像素 可以是元素变形*/ 
+		.skew{ 
+			-moz-transform: skew(30deg, -10deg);    /* y轴是向下的 */
+			-webkit-transform: skew(30deg, -10deg);  
+		}
+
+		/* div元素将会像右上角倾斜 */ 
+		.matrix{ 
+			-moz-transform: matrix(1, -0.2, 0, 1, 0, 0); 
+			-webkit-transform: matrix(1, -0.2, 0, 1, 0, 0);  
+		}
+
+		/* 可以实现多个动画叠加 */
+		.linkstyle{ 
+			-moz-transform:translate(400px,100px) rotate(45deg) scale(2,2); 
+			-webkit-transform:translate(400px,100px) rotate(45deg) scale(2,2); 
+		}
+
+		.class1{     /* 如果不设置起点，默认是中间*/
+			-moz-transform-origin: 0px 0px;     /*  左上 */
+			-webkit-transform-origin: 0px 0px; 
+			-moz-transform: rotate(45deg);  
+			-webkit-transform: rotate(45deg); 
+		
+		} 
+
+		.class2{
+			-moz-transform-origin:100% 100%;      /*  右下 */
+			-webkit-transform-origin:100% 100%;
+			-moz-transform: rotate(45deg);  
+			-webkit-transform: rotate(45deg);  
+		} 
+
+		.class3{
+			-moz-transform-origin:left top ;   /* 左上 */
+			-webkit-transform-origin:left top ; 
+			-moz-transform: rotate(45deg);  
+			-webkit-transform: rotate(45deg); 
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class='linkstyle'></div>
+</body>
+</html>
+
+
+
+<!-- 
+
+	transform的几个属性值：
+
+
+	rotate
+	Rotate(旋转)允许你通过传递一个度数值来转动一个对象。
+
+	scale
+	Scale是一个缩放功能，可以让任一元素变的更大。它使用正数和负数以及小数作为参数。
+
+	translate
+	Translate就是基于X和Y 坐标重新定位元素 
+
+	skew
+	顾名思义，skew就是要将对象倾斜，参数是度数 
+	
+	matrix
+	transform支持矩阵变换，就是基于X和Y 坐标重新定位元素 
+
+-->

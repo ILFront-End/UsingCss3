@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+
+		div{
+			height:100px;
+			width:100px;
+			background: red;
+			margin:100px auto;
+		}
+
+
+		.transitionC:hover{ 
+  			background-color:blue; 
+  			/* 告诉转换去应用到background-color */ 
+  			-webkit-transition-property:background-color; 
+  			/* 让它持续两秒钟*/ 
+  			-webkit-transition-duration:2s; 
+		} 
+
+		.transitionB:hover{ 
+  			border:solid 4px black ;
+  			/* 告诉转换去应用到border */ 
+  			-webkit-transition-property:border; 
+  			/* 让它持续两秒钟*/ 
+  			-webkit-transition-duration:4s; 
+		} 
+
+		.transitionR{
+			-webkit-transition-duration:2s;
+		}
+
+		.transitionR:hover{
+			-webkit-transform:rotate(45deg);
+			-moz-transform:rotate(45deg);
+			filter: progidXImageTransform.Microsoft.BasicImage(rotation=3);
+			-webkit-transition-property:rotate;
+			-webkit-transition-duration:2s;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class='transitionR'></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type='text/css'>
+		.test{
+			width:300px; 
+			padding:30px 20px; 
+			border:5px solid #beceeb; 
+			position:relative;
+		}
+		.test span{
+			width:0; 
+			height:0; 
+			font-size:0; 
+			overflow:hidden; 
+			position:absolute;
+		}
+		.test span.bot{
+		    border-width:20px; 
+		    border-style:solid dashed dashed; 
+		    border-color:#beceeb transparent transparent; 
+		    left:80px; 
+		    bottom:-40px;
+		}
+		.test span.top{
+		    border-width:20px; 
+		    border-style:solid dashed dashed; 
+		    border-color:#ffffff transparent transparent; 
+		    left:80px; 
+		    bottom:-33px;
+		} 
+	</style>
+</head>
+<body>
+	<div class="test">
+		<span class="bot"></span>
+		<span class="top"></span>
+		CSS “边框法”实现气泡对话框效果二
+	</div>
+</body>
+</html>
+
+
+
+<!-- 
+
+
+	transition的几个属性：
+
+	transition-property
+	指定转换的CSS属性名称，比如，上面的例子中，将转换应用于background-color属性。 
+
+	transition-duration
+	定义转换花费的时间（从旧属性换到新属性花费的时间）
+
+	transition-timing-function
+	可以理解为过度效果。指定转换过程中的中间值。可以用cubic-bezier指定。当然有几个常用的内置值：ease | linear | ease-in | ease-out | ease-in-out 
+	
+	transition-delay
+	这个比较容易理解，就是转换延迟的时间。时间可以为正整数、负整数和零，非零的时候必须设置单位是s(秒)或者ms(毫秒)，为负数的时候，转换的动作会从该时间点开始显示，之前的动作被截断。 
+
+ -->
